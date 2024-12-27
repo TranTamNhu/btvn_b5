@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1100px;
+            height: 800px;
+            background-image: url(https://c.pxhere.com/photos/f4/bc/journey_road_mountain_landscape_path-99394.jpg!d);
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            position: relative; 
+
+        }
+        .title{
+            font-size: 70px;
+            color: white;
+            visibility: visible;
+            transition: all .3s ease-in;
+            font-family: sans-serif;
+            
+        }
+
+        .container:hover .title{
+            visibility:hidden;
+        }
+        .icon{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+           
+            color: white;
+            top: 50%;
+            bottom: 50%;
+            right: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            visibility: hidden;
+            transition: all .5s ease;
+            opacity: 0.7;
+            font-size: 50px;
+           
+        }
+        /* .icon::before{
+            content: "";
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            visibility: visible;
+            color: white;
+            top: 50%;
+            bottom: 50%;
+            right: 50%;
+            left: 50%;
+
+
+
+        } */
+        .a{
+            width: 10px;
+            height:10px;
+            position: absolute;
+            color: white;
+            transform: translate(-50%,-50%);
+            transform: rotate(45deg);
+            border: 6px solid white;
+            visibility: hidden;
+            transition: all .5s ease;
+            
+        }
+        .container:hover .a{
+            width: 450px;
+            height: 450px;
+            visibility: visible;
+        }
+          /* .a::before{
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            /* visibility: hidden; */
+             /* transform: rotate(45deg);
+            border: 6px solid white;
+            transition: all .5s ease-in-out;
+            
+            
+            
+        }   */ 
+        /* .a:hover::before{
+            width: 450px;
+            height: 450px;
+            visibility: visible;
+           
+        } */
+
+        .container:hover .icon{
+            width: 130px;
+            height: 140px;
+            visibility: visible;
+        }
+        .icon1{
+            
+            position: absolute;
+
+           top: 0;
+           left: 0;
+            
+        }
+        .icon2{
+           
+            position: absolute;
+            top: 0;
+            right: 0;
+           
+        }
+        .icon3{
+           
+            position: absolute;
+            bottom: 0;
+            right: 0;
+           
+           
+        
+        }
+        .icon4{
+           
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="title"><span style="font-weight: lighter;">TENDER</span><span style="font-weight: bolder;">HERA</span></h1>
+        </div>
+        <div class="a"></div>
+        <div class="icon">
+            <div class="icon1">
+                <i class="fa-regular fa-file-image"></i>
+            </div>
+            <div class="icon2">
+                <i class="fa-regular fa-file-word"></i>
+            </div>
+            <div class="icon3">
+                <i class="fa-regular fa-file-audio"></i>
+            </div>
+            <div class="icon4">
+                <i class="fa-regular fa-file-lines"></i>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
